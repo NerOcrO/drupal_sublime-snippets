@@ -1,0 +1,19 @@
+<snippet>
+  <tabTrigger>hook_form_FORM_ID_alter</tabTrigger>
+  <content><![CDATA[
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function ${TM_FILENAME/([^.]*)\..*$/$1/}_form_${1:/*FORM_ID*/}_alter(&\$form, \$form_state, \$form_id) {
+  \$form['${2}']${3} = array(
+    '#type' => '${4:text}',
+    '#title' => t('${5}'),
+    '#description' => t('${6}'),
+    '#default_value' => '${7}',
+    '#required' => TRUE,${8}
+  );
+}
+
+]]></content>
+</snippet>
