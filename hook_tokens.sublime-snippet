@@ -1,5 +1,5 @@
 <snippet>
-  <tabTrigger>hook_tokens(\$type,</tabTrigger>
+  <tabTrigger>hook_tokens</tabTrigger>
   <content><![CDATA[/**
  * Implements hook_tokens(\$type, \$tokens, array \$data = array(), array \$options = array().
  */
