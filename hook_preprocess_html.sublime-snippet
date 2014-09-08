@@ -1,0 +1,13 @@
+<snippet>
+  <tabTrigger>hook_preprocess_html</tabTrigger>
+  <content><![CDATA[
+
+/**
+ * Implements template_preprocess_html().
+ */
+function ${TM_FILENAME/([^.]*)\..*$/$1/}_preprocess_html(&\$variables) {
+  ${1}
+}
+
+]]></content>
+</snippet>
