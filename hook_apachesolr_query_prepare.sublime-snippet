@@ -1,0 +1,13 @@
+<snippet>
+  <tabTrigger>hook_apachesolr_query_prepare</tabTrigger>
+  <content><![CDATA[
+
+/**
+ * Implements hook_apachesolr_query_prepare().
+ */
+function ${TM_FILENAME/([^.]*)\..*$/$1/}_apachesolr_query_prepare(\$query) {
+  ${1}
+}
+
+]]></content>
+</snippet>
