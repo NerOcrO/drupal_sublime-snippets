@@ -1,0 +1,13 @@
+<snippet>
+  <tabTrigger>hook_apachesolr_index_document_build</tabTrigger>
+  <content><![CDATA[
+
+/**
+ * Implements hook_apachesolr_index_document_build().
+ */
+function ${TM_FILENAME/([^.]*)\..*$/$1/}_apachesolr_index_document_build(ApacheSolrDocument \$document, \$entity, \$entity_type, \$env_id) {
+  ${1}
+}
+
+]]></content>
+</snippet>
