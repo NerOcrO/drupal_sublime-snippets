@@ -1,0 +1,13 @@
+<snippet>
+  <tabTrigger>hook_process_page</tabTrigger>
+  <content><![CDATA[
+
+/**
+ * Implements template_process_page().
+ */
+function ${TM_FILENAME/([^.]*)\..*$/$1/}_process_page(&\$variables) {
+  ${1}
+}
+
+]]></content>
+</snippet>
