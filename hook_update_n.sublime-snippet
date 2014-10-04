@@ -5,7 +5,7 @@
 /**
  * Implements hook_update_N().
  */
-function ${TM_FILENAME/([^.]*)\..*$/$1/}_update_70${1}(&\$sandbox) {
+function ${TM_FILENAME/([^.]*)\..*$/$1/}_update_71${1}(&\$sandbox) {
   ${2}
 }
 
