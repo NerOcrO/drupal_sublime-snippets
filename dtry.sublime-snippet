@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+try {
+  ${1}
+}
+catch (EntityMetadataWrapperException \$exception) {
+  watchdog_exception(__FUNCTION__, $exception);
+}
+]]></content>
+    <tabTrigger>dtry</tabTrigger>
+    <scope>source.php</scope>
+    <description>try/catch</description>
+</snippet>
