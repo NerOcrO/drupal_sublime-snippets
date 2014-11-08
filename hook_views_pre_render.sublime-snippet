@@ -8,7 +8,9 @@
 function ${TM_FILENAME/([^.]*)\..*$/$1/}_views_pre_render(&\$view) {
   if (\$view->name == '${1}') {
     if (\$view->current_display == '${2}') {
-      ${3}
+      if (count(\$view->result) > 0) {
+        ${3}
+      }
     }
   }
 }
