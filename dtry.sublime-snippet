@@ -4,7 +4,7 @@ try {
   ${1}
 }
 catch (EntityMetadataWrapperException \$exception) {
-  watchdog_exception(__FUNCTION__, $exception);
+  watchdog_exception(__FUNCTION__, \$exception);
 }
 ]]></content>
     <tabTrigger>dtry</tabTrigger>
