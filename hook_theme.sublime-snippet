@@ -10,7 +10,8 @@ function ${TM_FILENAME/([^.]*)\..*$/$1/}_theme(\$existing, \$type, \$theme, \$pa
     '${1}' => array(
       'render element' => '${2}',
       'variables' => array('${3}' => NULL, ${4}),
-      'file' => '${5}',
+      'template' => '${5}',
+      'file' => '${6}',
     ),
   );
 }
