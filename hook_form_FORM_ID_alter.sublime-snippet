@@ -5,7 +5,7 @@
 /**
  * Implements hook_form_FORM_ID_alter().
  */
-function ${TM_FILENAME/([^.]*)\..*$/$1/}_form_${1:/*FORM_ID*/}_alter(&\$form, \$form_state, \$form_id) {
+function ${TM_FILENAME/([^.]*)\..*$/$1/}_form_${1:/*FORM_ID*/}_alter(&\$form, &\$form_state, \$form_id) {
   \$form['${2}']${3} = array(
     '#type' => '${4:text}',
     '#title' => t('${5}'),
