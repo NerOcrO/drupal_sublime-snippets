@@ -9,7 +9,7 @@ function ${TM_FILENAME/([^.]*)\..*$/$1/}_views_pre_render(&\$view) {
   if (\$view->name == '${1}') {
     if (\$view->current_display == '${2}') {
       if (count(\$view->result) > 0) {
-        ${3}
+        \$view->build_info['substitutions']['%nom_de_ta_variable'] = '${3}';
       }
     }
   }
