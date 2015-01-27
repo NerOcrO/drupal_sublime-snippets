@@ -6,10 +6,12 @@
  * Implements hook_node_view_alter().
  */
 function ${TM_FILENAME/([^.]*)\..*$/$1/}_node_view_alter(&\$build) {
-  if (\$build['#node']['#type'] == '${1}') {
-    if (\$build['#view_mode'] == '${2}') {
-      ${3}
-    }
+  if (\$build['#node']['#type'] != '${1}') {
+    return;
+  }
+
+  if (\$build['#view_mode'] == '${2}') {
+    ${3}
   }
 }
 

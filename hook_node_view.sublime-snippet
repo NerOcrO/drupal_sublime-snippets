@@ -6,10 +6,12 @@
  * Implements hook_node_view().
  */
 function ${TM_FILENAME/([^.]*)\..*$/$1/}_node_view(\$node, \$view_mode, \$langcode) {
-  if (\$node->type == '${1}') {
-    if (\$view_mode == '${2}') {
-      ${3}
-    }
+  if (\$node->type != '${1}') {
+    return;
+  }
+
+  if (\$view_mode == '${2}') {
+    ${3}
   }
 }
 

@@ -6,12 +6,12 @@
  * Implements hook_block_info().
  */
 function ${TM_FILENAME/([^.]*)\..*$/$1/}_block_info() {
-  \$blocks['${1}'] = array(
-    'info' => t('${2}'),
-    'cache' => ${3:DRUPAL_CACHE_PER_PAGE},
+  return array(
+    '${1}' => array(
+      'info' => t('${2}'),
+      'cache' => ${3:DRUPAL_CACHE_PER_PAGE},
+    ),
   );
-
-  return \$blocks;
 }
 
 ]]></content>
