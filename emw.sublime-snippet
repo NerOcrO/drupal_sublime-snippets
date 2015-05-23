@@ -1,0 +1,15 @@
+<snippet>
+  <tabTrigger>emw</tabTrigger>
+  <content><![CDATA[
+
+\$wrapper_${1:node} = entity_metadata_wrapper(${2:'node'}, ${3:\$node});
+
+try {
+  ${4}
+}
+catch (EntityMetadataWrapperException \$exception) {
+  watchdog_exception(__FUNCTION__, \$exception);
+}
+
+]]></content>
+</snippet>
