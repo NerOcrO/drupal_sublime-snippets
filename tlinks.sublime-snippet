@@ -1,0 +1,14 @@
+<snippet>
+  <tabTrigger>tlinks</tabTrigger>
+  <content><![CDATA[
+
+\$elements = array(
+  '#theme' => 'links',
+  '#links' => $links,
+  '#attributes' => array('class' => array(${1})),
+  '#heading' => t('${2}'),
+  // '#heading' => array('text' => t('my_title'), 'level' => 'h3', 'class' => array('class1', 'class2')),
+);
+
+]]></content>
+</snippet>
