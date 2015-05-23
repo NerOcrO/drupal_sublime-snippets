@@ -1,0 +1,14 @@
+<snippet>
+  <tabTrigger>titem_list</tabTrigger>
+  <content><![CDATA[
+
+\$elements = array(
+  '#theme' => 'item_list',
+  '#items' => \$items,
+  // '#title' => '${1}',
+  // '#type' => 'ol',
+  // '#attributes' => array('class' => array(${2})),
+);
+
+]]></content>
+</snippet>
