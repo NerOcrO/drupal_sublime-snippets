@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+\$query = new EntityFieldQuery();
+
+\$query->entityCondition('entity_type', 'node')
+  ->entityCondition('bundle', 'article')
+  ->propertyCondition('status', NODE_PUBLISHED)
+  ->fieldCondition('field_news_types', 'value', 'spotlight', '=')
+  ->fieldCondition('field_photo', 'fid', 'NULL', '!=')
+  ->fieldCondition('field_faculty_tag', 'tid', \$value)
+  ->fieldCondition('field_news_publishdate', 'value', \$year . '%', 'like')
+  ->fieldOrderBy('field_photo', 'fid', 'DESC')
+  // ->propertyOrderBy($column, $direction = 'ASC')
+  ->range(0, 10)
+  ->addMetaData('account', user_load(1)); // Run the query as user 1.
+
+\$result = \$query->execute();
+
+if (isset(\$result['node'])) {
+  \$news_items_nids = array_keys(\$result['node']);
+  \$news_items = entity_load('node', \$news_items_nids);
+}
+]]></content>
+    <tabTrigger>efq</tabTrigger>
+    <scope>source.php</scope>
+    <description>efq</description>
+</snippet>
