@@ -10,7 +10,7 @@
   ->fieldCondition('field_faculty_tag', 'tid', \$value)
   ->fieldCondition('field_news_publishdate', 'value', \$year . '%', 'like')
   ->fieldOrderBy('field_photo', 'fid', 'DESC')
-  // ->propertyOrderBy($column, $direction = 'ASC')
+  // ->propertyOrderBy(\$column, \$direction = 'ASC')
   ->range(0, 10)
   ->addMetaData('account', user_load(1)); // Run the query as user 1.
 
