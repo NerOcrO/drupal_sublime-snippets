@@ -5,7 +5,7 @@
 /**
  * Implements hook_entity_view().
  */
-function ${TM_FILENAME/([^.]*)\..*$/$1/}_node_view(\$entity, \$type, \$view_mode, \$langcode) {
+function ${TM_FILENAME/([^.]*)\..*$/$1/}_entity_view(\$entity, \$type, \$view_mode, \$langcode) {
   if (\$type != '${1}') {
     return;
   }
@@ -13,7 +13,7 @@ function ${TM_FILENAME/([^.]*)\..*$/$1/}_node_view(\$entity, \$type, \$view_mode
   \$extra_fields = field_extra_fields_get_display(\$type, \$entity->type, \$view_mode);
 
   if (\$extra_fields['${2}']['visible']) {
-    \$node->content['${2}'] = array(
+    \$entity->content['${2}'] = array(
       '#markup' => '${3}',
     );
   }
