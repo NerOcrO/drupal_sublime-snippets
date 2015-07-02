@@ -5,7 +5,7 @@
 /**
  * Implements hook_apachesolr_query_prepare().
  */
-function ${TM_FILENAME/([^.]*)\..*$/$1/}_apachesolr_query_prepare(\$query) {
+function ${TM_FILENAME/([^.]*)\..*$/$1/}_apachesolr_query_prepare(DrupalSolrQueryInterface \$query) {
   ${1}
 }
 
