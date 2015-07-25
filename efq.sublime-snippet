@@ -2,7 +2,7 @@
     <content><![CDATA[
 \$query = new EntityFieldQuery();
 
-\$query->entityCondition('entity_type', 'node')
+\$result = \$query->entityCondition('entity_type', 'node')
   ->entityCondition('bundle', 'article')
   ->propertyCondition('status', NODE_PUBLISHED)
   ->fieldCondition('field_news_types', 'value', 'spotlight', '=')
@@ -12,9 +12,8 @@
   ->fieldOrderBy('field_photo', 'fid', 'DESC')
   // ->propertyOrderBy(\$column, \$direction = 'ASC')
   ->range(0, 10)
-  ->addMetaData('account', user_load(1)); // Run the query as user 1.
-
-\$result = \$query->execute();
+  ->addMetaData('account', user_load(1)) // Run the query as user 1.
+  ->execute();
 
 if (isset(\$result['node'])) {
   \$news_items_nids = array_keys(\$result['node']);
