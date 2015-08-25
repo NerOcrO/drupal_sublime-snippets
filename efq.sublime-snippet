@@ -12,6 +12,7 @@
   ->fieldOrderBy('field_photo', 'fid', 'DESC')
   // ->propertyOrderBy(\$column, \$direction = 'ASC')
   ->range(0, 10)
+  ->pager(10)
   ->addMetaData('account', user_load(1)) // Run the query as user 1.
   ->execute();
 
