@@ -6,7 +6,7 @@
   '#theme' => 'image_style',
   '#style_name' => '${1}',
   '#path' => ${2:base_path() . path_to_theme() . '/images/my_image.png'},
-  // '#path' => file_create_url(\$object->field_xxx['und'][0]['uri']),
+  // '#path' => \$object->field_xxx['und'][0]['uri'],
   // '#width' => ${3},
   // '#height' => ${4},
   // '#alt' => t('${5}'),
