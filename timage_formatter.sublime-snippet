@@ -1,0 +1,12 @@
+<snippet>
+  <tabTrigger>timage_formatter</tabTrigger>
+  <content><![CDATA[
+
+\$elements = array(
+  '#theme' => 'image_formatter',
+  '#item' => \$wrapper->field_image->value(),
+  '#image_style' => 'image_style_machine_name',
+);
+
+]]></content>
+</snippet>
