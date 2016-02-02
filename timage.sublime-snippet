@@ -5,7 +5,7 @@
 \$elements = array(
   '#theme' => 'image',
   '#path' => ${1:base_path() . path_to_theme() . '/images/my_image.png'},
-  // '#path' => file_create_url($object->field_xxx['und'][0]['uri']),
+  // '#path' => file_create_url(\$object->field_xxx['und'][0]['uri']),
   // '#width' => ${2},
   // '#height' => ${3},
   // '#alt' => t('${4}'),
