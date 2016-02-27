@@ -1,7 +1,7 @@
 <snippet>
   <tabTrigger>emw</tabTrigger>
   <content><![CDATA[
-
+use EntityMetadataWrapperException;
 \$wrapper_${1:node} = entity_metadata_wrapper(${2:'node'}, ${3:\$node});
 
 try {
