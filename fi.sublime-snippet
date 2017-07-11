@@ -1,12 +1,14 @@
 <snippet>
-  <tabTrigger>fi</tabTrigger>
   <content><![CDATA[
 
 \$form['${1}']${2} = [
-	'#type' => '${3}',
-	'#title' => t('${4}'),
-	'#default_value' => '${5}',${6}
+  '#type' => '${3}',
+  '#title' => t('${4}'),
+  '#default_value' => '${5}',${6}
 ];
 
 ]]></content>
+  <tabTrigger>fi</tabTrigger>
+  <scope>source.php</scope>
+  <description>D7 fi</description>
 </snippet>

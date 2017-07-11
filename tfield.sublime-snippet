@@ -1,5 +1,4 @@
 <snippet>
-  <tabTrigger>tfield</tabTrigger>
   <content><![CDATA[
 
 'field' = [
@@ -18,4 +17,7 @@
 ];
 
 ]]></content>
+  <tabTrigger>tfield</tabTrigger>
+  <scope>source.php</scope>
+  <description>D7 tfield</description>
 </snippet>

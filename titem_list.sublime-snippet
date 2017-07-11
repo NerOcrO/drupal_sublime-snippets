@@ -1,5 +1,4 @@
 <snippet>
-  <tabTrigger>titem_list</tabTrigger>
   <content><![CDATA[
 
 \$items[] = [
@@ -17,4 +16,7 @@
 ];
 
 ]]></content>
+  <tabTrigger>titem_list</tabTrigger>
+  <scope>source.php</scope>
+  <description>D7 titem_list</description>
 </snippet>

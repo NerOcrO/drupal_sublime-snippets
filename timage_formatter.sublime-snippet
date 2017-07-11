@@ -1,5 +1,4 @@
 <snippet>
-  <tabTrigger>timage_formatter</tabTrigger>
   <content><![CDATA[
 
 'image_formatter' = [
@@ -9,4 +8,7 @@
 ];
 
 ]]></content>
+  <tabTrigger>timage_formatter</tabTrigger>
+  <scope>source.php</scope>
+  <description>D7 timage_formatter</description>
 </snippet>

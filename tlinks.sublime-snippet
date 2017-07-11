@@ -1,5 +1,4 @@
 <snippet>
-  <tabTrigger>tlinks</tabTrigger>
   <content><![CDATA[
 
 \$links[] = [
@@ -20,4 +19,7 @@
 ];
 
 ]]></content>
+  <tabTrigger>tlinks</tabTrigger>
+  <scope>source.php</scope>
+  <description>D7 tlinks</description>
 </snippet>

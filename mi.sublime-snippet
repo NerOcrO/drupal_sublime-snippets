@@ -1,12 +1,14 @@
 <snippet>
-  <tabTrigger>mi</tabTrigger>
   <content><![CDATA[\$items['${1}'] = [
-	'title' => '${2}',
-	'page callback' => '${3}',
-	'page arguments' => ['${4}'],
-	'access arguments' => ['${5}'],
-	'type' => ${6},
-	'file' => ${7},${8}
+  'title' => '${2}',
+  'page callback' => '${3}',
+  'page arguments' => ['${4}'],
+  'access arguments' => ['${5}'],
+  'type' => ${6},
+  'file' => ${7},${8}
 ];
 ]]></content>
+  <tabTrigger>mi</tabTrigger>
+  <scope>source.php</scope>
+  <description>D7 mi</description>
 </snippet>

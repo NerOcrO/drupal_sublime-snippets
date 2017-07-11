@@ -1,5 +1,4 @@
 <snippet>
-  <tabTrigger>tcontainer</tabTrigger>
   <content><![CDATA[
 
 'container' = [
@@ -8,4 +7,7 @@
 ];
 
 ]]></content>
+  <tabTrigger>tcontainer</tabTrigger>
+  <scope>source.php</scope>
+  <description>D7 tcontainer</description>
 </snippet>

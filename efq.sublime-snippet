@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[
+  <content><![CDATA[
 \$query = new EntityFieldQuery();
 
 \$result = \$query->entityCondition('entity_type', 'node')
@@ -21,7 +21,7 @@ if (isset(\$result['node'])) {
   \$news_items = entity_load('node', \$news_items_nids);
 }
 ]]></content>
-    <tabTrigger>efq</tabTrigger>
-    <scope>source.php</scope>
-    <description>efq</description>
+  <tabTrigger>efq</tabTrigger>
+  <scope>source.php</scope>
+  <description>D7 EFQ</description>
 </snippet>
