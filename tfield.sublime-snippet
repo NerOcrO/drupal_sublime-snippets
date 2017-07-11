@@ -2,7 +2,7 @@
   <tabTrigger>tfield</tabTrigger>
   <content><![CDATA[
 
-\$elements = array(
+'field' = [
   '#theme' => 'field',
   // '#label_display' => FALSE, // or hidden
   // '#title' => t(''),
@@ -11,11 +11,11 @@
   '#field_type' => 'text',
   '#entity_type' => 'node',
   '#bundle' => \$node->type,
-  '#items' => array(array()),
-  array(
+  '#items' => [[]],
+  [
     '#markup' => '${2}',
-  ),
-);
+  ],
+];
 
 ]]></content>
 </snippet>

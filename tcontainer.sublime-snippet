@@ -1,0 +1,11 @@
+<snippet>
+  <tabTrigger>tcontainer</tabTrigger>
+  <content><![CDATA[
+
+'container' = [
+  '#type' => 'container',
+  '#attributes' => ['class' => 'class1'],
+];
+
+]]></content>
+</snippet>

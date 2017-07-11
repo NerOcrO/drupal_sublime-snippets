@@ -2,13 +2,19 @@
   <tabTrigger>titem_list</tabTrigger>
   <content><![CDATA[
 
-\$elements = array(
+\$items[] = [
+  'data' => 'my_title',
+  'children' => [],
+  'm_attribute' => 'what_ever',
+];
+
+'item_list' = [
   '#theme' => 'item_list',
   '#items' => \$items,
   // '#title' => '${1}',
   // '#type' => 'ol',
-  // '#attributes' => array('class' => array(${2})),
-);
+  // '#attributes' => ['class' => [${2}]],
+];
 
 ]]></content>
 </snippet>

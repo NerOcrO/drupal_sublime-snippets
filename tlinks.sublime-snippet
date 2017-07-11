@@ -2,13 +2,22 @@
   <tabTrigger>tlinks</tabTrigger>
   <content><![CDATA[
 
-\$elements = array(
+\$links[] = [
+  'href' => "node/1",
+  'title' => t('title1'),
+];
+\$links[] = [
+  'href' => "node/1",
+  'title' => t('title2'),
+];
+
+'links' = [
   '#theme' => 'links',
   '#links' => \$links,
-  '#attributes' => array('class' => array(${1})),
+  '#attributes' => ['class' => [${1}]],
   '#heading' => t('${2}'),
-  // '#heading' => array('text' => t('my_title'), 'level' => 'h3', 'class' => array('class1', 'class2')),
-);
+  // '#heading' => ['text' => t('my_title'), 'level' => 'h3', 'class' => ['class1', 'class2']],
+];
 
 ]]></content>
 </snippet>

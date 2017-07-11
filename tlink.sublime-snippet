@@ -2,15 +2,15 @@
   <tabTrigger>tlink</tabTrigger>
   <content><![CDATA[
 
-\$elements = array(
+'link' = [
   '#theme' => 'link',
   '#path' => "${1}",
   '#text' => t('${2}'),
-  '#options' => array(
-    'attributes' => array(${3}),
+  '#options' => [
+    'attributes' => [${3}],
     'html' => ${4:TRUE/FALSE},
-  ),
-);
+  ],
+];
 
 ]]></content>
 </snippet>

@@ -1,0 +1,13 @@
+<snippet>
+  <tabTrigger>thtml_tag</tabTrigger>
+  <content><![CDATA[
+
+'html_tag' = [
+  '#theme' => 'html_tag',
+  '#tag' => 'div',
+  '#value' => t(''),
+  '#attributes' => ['class' => ['class1', 'class2']],
+];
+
+]]></content>
+</snippet>

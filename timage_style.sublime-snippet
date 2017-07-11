@@ -2,17 +2,18 @@
   <tabTrigger>timage_style</tabTrigger>
   <content><![CDATA[
 
-\$elements = array(
+'image_style' = [
   '#theme' => 'image_style',
   '#style_name' => '${1}',
   '#path' => ${2:base_path() . path_to_theme() . '/images/my_image.png'},
+  // '#path' => drupal_get_path('theme', 'XXX') . '/images/my_image.png',
   // '#path' => \$object->field_xxx['und'][0]['uri'],
   // '#width' => ${3},
   // '#height' => ${4},
   // '#alt' => t('${5}'),
   // '#title' => t('${6}'),
-  // '#attributes' => array('class' => array(${7})),
-);
+  // '#attributes' => ['class' => [${7}]],
+];
 
 ]]></content>
 </snippet>

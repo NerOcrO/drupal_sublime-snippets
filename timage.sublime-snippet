@@ -2,16 +2,17 @@
   <tabTrigger>timage</tabTrigger>
   <content><![CDATA[
 
-\$elements = array(
+'image' = [
   '#theme' => 'image',
   '#path' => ${1:base_path() . path_to_theme() . '/images/my_image.png'},
+  // '#path' => drupal_get_path('theme', 'XXX') . '/images/my_image.png',
   // '#path' => file_create_url(\$object->field_xxx['und'][0]['uri']),
   // '#width' => ${2},
   // '#height' => ${3},
   // '#alt' => t('${4}'),
   // '#title' => t('${5}'),
-  // '#attributes' => array('class' => array(${6})),
-);
+  // '#attributes' => ['class' => [${6}]],
+];
 
 ]]></content>
 </snippet>
